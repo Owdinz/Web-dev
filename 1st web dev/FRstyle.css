@@ -1,0 +1,54 @@
+body {
+    background-image: url('FriedR.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body::after {
+    content: '';
+    position: fixed; /* Use fixed positioning to keep the background fixed on the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('FriedR.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);  /* Apply the blur effect */
+    z-index: -1;  /* Ensure the background stays behind the content */
+}
+
+
+
+button {
+    background-color: #4CAF50; /* Fresh green background */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    padding: 12px 24px; /* Adequate padding for a clickable area */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners for a soft look */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for all hover effects */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow for a lifted effect */
+}
+
+button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0px 0px 5px 2px rgba(72, 205, 255, 0.7); /* Glow effect when focused */
+}
+
+.fixed-image {
+    width: 60%; /* Adjust the width */
+    height: 60%; /* Adjust the height */
+    position: fixed; /* Fix the image in place */
+    top: 105px; /* Position it 105px from the top of the page */
+    right: 0; /* Position it to the right side of the page */
+    z-index: 10; /* Ensure it's above other elements */
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+
+<!-- background !-->
+<link rel="stylesheet" type="text/css" href="homeBG.css">
+<style>
+
+/*background blurry */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f4f4f4; /* Optional: Light background color for contrast */
+}
+
+.content {
+    text-align: center;
+    color: #C4AE4E;
+    font-size: 24px;
+}
+
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send the blurred image behind other content */
+}
+
+button {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    margin: 0 10px; /* Add space between buttons */
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 2px rgba(72, 205, 255, 0.7);
+}
+
+button.sinigang {
+    background-color: #FF6347;
+}
+
+button.friedRice {
+    background-color: #FFD700;
+}
+
+button.sinigang:hover {
+    background-color: #e55347;
+}
+
+button.friedRice:hover {
+    background-color: #EC8B62;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    
+}
+
+</style>
+</head>
+
+<!-- FOR BODY ONLY 1 !-->
+<body>
+
+    <img src="chefD.gif" alt="Sinigang" style="width:40%; height:60%; margin-top: 10px;">
+
+
+    <div class="center">
+        <button type="button" class="home" onclick="location.href='Sinigang.html'">Sinigang</button>
+        <button type="button" class="friedRice" onclick="location.href='friedR.html'">Fried Rice</button>
+    </div>
+
+<div class="bg-image"></div>
+
+</body>
+
+
+</html>
